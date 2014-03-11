@@ -6,7 +6,7 @@ Powerline for [Prezto](http://github.com/sorin-ionescu/prezto) ZSH
 * Single line prompt
 * Git branch info (current branch and modified states)
 * Time since last commit
-* RVM current ruby version / gemset
+* Current ruby version via ruby-info
 
 ![Example](https://raw.github.com/davidjrice/prezto_powerline/master/prompt.png)
 
@@ -25,7 +25,7 @@ Powerline for [Prezto](http://github.com/sorin-ionescu/prezto) ZSH
     touch ~/.secrets
 
     # Install the prompt
-    curl https://raw.github.com/davidjrice/prezto_powerline/master/prompt_powerline_setup > ~/.zsh.prompts/prompt_powerline_setup
+    curl https://raw.github.com/sebastianpicklum/prezto_shpowerline/master/prompt_powerline_setup > ~/.zsh.prompts/prompt_powerline_setup
 
     # Install Solarized
     git clone https://github.com/altercation/solarized
@@ -41,12 +41,15 @@ Powerline for [Prezto](http://github.com/sorin-ionescu/prezto) ZSH
     #   profiles > default > terminal > report terminal type > "xterm-256color"
 
     # Enable
-    echo "prompt powerline" > ~/.zsh.after/prompt.zsh
+    echo "prompt shpowerline" > ~/.zsh.after/prompt.zsh
 
 
 ## Inspiration
 
-This prompt is inspired by:
+Based on the great
+* [prezto_powerline](https://github.com/davidjrice/prezto_powerline)
+
+which was inspired by:
 
 * [oh-my-zsh-powerline-theme](http://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme)
 * [robbl oh-my-zsh theme](http://github.com/robbl/oh-my-zsh-config)
@@ -54,7 +57,8 @@ This prompt is inspired by:
 
 ## TODO
 
-* Moar configurable
-* Extract functions to Prezto modules?
-* Use better Prezto best practices...?
-* Handle NVM version info?
+* Powerline font support
+* nvm version info support
+* color optimization
+* increase configurability
+* more intelligent functions
